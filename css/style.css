@@ -12,6 +12,7 @@
     --font-overpass:"Overpass", san-serif;
     --font-inter:"Inter", san-serif;
     --font-kanit:"Kanit", san-serif;
+    --font-montserrat:"Montserrat", san-serif;
 }
 
 html{
@@ -30,6 +31,7 @@ body{
 
 h1, h2, h3{
     font-family: var(--font-inter);
+    color:var(--color-primary);
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: 1.5px;
@@ -70,4 +72,12 @@ h2{
 .btn__second{
     padding:3rem 9rem;
 }
+
+/* features*/
+
+.features__heading{
+    font-size: 2.4rem;
+}
+
+
 
