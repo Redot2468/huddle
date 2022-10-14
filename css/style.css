@@ -99,5 +99,44 @@ h2{
     font-size: 2.4rem;
 }
 
+/* features block */
+.features__block{
+    text-align: center;
+ 
+}
+
+.features__image img{
+    width:70%;
+}
+
+.grow__features{
+    padding:2rem 3rem;
+}
+
+@media screen and (min-width:768px){
+
+    .features__block{
+        text-align:left;
+        grid-template-areas: "aside aside1";
+        max-width:1200px;
+        margin:0 auto;
+    
+    }
+
+    .features__image{
+        grid-area: aside1;
+        text-align: center;
+      
+        
+    }
+
+    .grow__features{
+        align-self: center;
+        margin-top: -7rem;
+    }
+
+   
+}
+
 
 
