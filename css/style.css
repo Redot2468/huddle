@@ -73,6 +73,26 @@ h2{
     padding:3rem 9rem;
 }
 
+/* grid */
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    border:1px solid green;
+}
+
+.grid > section{
+    border:1px solid green;
+}
+
+@media screen and (min-width:768px){
+    .grid{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+}
+
 /* features*/
 
 .features__heading{
