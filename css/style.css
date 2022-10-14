@@ -20,7 +20,7 @@ html{
 }
 
 body{
-    font-family: var(--font-overpass);
+    font-family: var(--font-heebo);
     font-size: 1.6rem;
     color:var(--color-primary);
     line-height: 1.5;
@@ -301,9 +301,6 @@ h2{
 
 }
 
-.callout h2, .callout button{
-    font-family: "Heebo", sans-serif;
-}
 
 .callout .btn__first{
     box-shadow: 0 2px 10px 5px #e4e8e9;
@@ -315,3 +312,118 @@ h2{
         margin: auto;
     }
 }
+
+/* footer */
+
+.footer{
+    background: var(--color-primary);
+    color:var(--color-white);
+    padding:18rem 0 4rem;
+}
+
+.footer__logo{
+    margin-bottom: .5rem;
+    margin-left: 4rem;
+    
+}
+
+.contact{
+    padding-left: 4rem;
+}
+
+.contact p{
+    margin-bottom: 2rem;
+}
+
+.mail, .phone, .location{
+    margin-right:2rem;
+}
+
+.footer__location{
+    display: flex;
+   
+}
+
+.location{
+    width:15px;
+    height: 22px;
+}
+
+.location__address{
+    width:70%;
+}
+
+.about__list{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.about__list li{
+    list-style: none;
+    margin:0.7rem;
+}
+
+.about__list a{
+    text-decoration: none;
+    color:var(--color-white);
+    
+}
+
+.footer__media{
+    text-align: center;
+}
+
+.media__list{
+  
+    padding-left: 0;
+}
+
+.media__list li{
+    list-style: none;
+    display: inline;
+    
+    margin:1rem;
+   
+    border-radius: 100%;
+}
+
+.media__list a{
+    text-decoration: none;
+    color:white;
+}
+
+.media__list i{
+    font-size: 1.6rem;
+    border:1px solid white;
+    border-radius: 100%;
+    padding:.7rem;
+}
+
+i.fa-facebook-f{
+    padding:.7rem 1rem;
+}
+
+.footer__copyright{
+    margin-top:3rem;
+}
+
+@media screen and (min-width:768px){
+
+    
+
+    .about__list{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+    .footer__media{
+        text-align: left;
+        
+    }
+
+    .footer__copyright{
+        margin-top: 15rem;
+        margin-left: 1rem;
+    }
+}
+
