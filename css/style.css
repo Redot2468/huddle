@@ -49,28 +49,61 @@ h2{
 /* buttons */
 
 .btn{
-    background: var(--color-secondary);
+    
     border:none;
     border-radius: 50px;
     transition: background .2s;
     cursor: pointer;
 }
 
-.btn:hover{
+.btn a{
+    text-decoration: none;
+}
+
+.btn__first:hover,
+ .btn__second:hover{
     background: #ff9bdb;
 }
 
-.btn a{
-    text-decoration: none;
+.btn__first a, .btn__second a{
+   
     color:white;
 }
 
 .btn__first{
     padding:2rem 7rem;
+    background: var(--color-secondary);
 }
 
 .btn__second{
     padding:3rem 9rem;
+    background: var(--color-secondary);
+}
+
+.btn__nav{
+    background: white;
+    padding:.5rem 3rem;
+    background:1px solid green;
+    border-radius: 20px;
+}
+
+.btn__nav a{
+    color:#042a35;
+    font-family: var(--font-heebo);
+    font-weight: 500;
+    font-size: 1.4rem;
+    transition: color .2s;
+}
+
+.btn__nav a:hover{
+    color:#387381;
+}
+
+@media screen and (min-width:768px){
+    .btn__nav{
+        padding:1.5rem 6rem;
+        border-radius: 30px;
+    }
 }
 
 /* grid */
@@ -133,7 +166,7 @@ h2{
 
     .grow__features{
         align-self: center;
-        margin-top: -7rem;
+        margin-top: -4rem;
     }
 
    
@@ -157,5 +190,30 @@ h2{
     }
 }
 
+/* nav */
+.nav{
+   
+    display: flex;
+    justify-content: space-between;
+    padding:2rem;
+}
+
+.nav__logo{
+    border:1px solid green;
+    width:150px;
+    height: 28px;
+    align-self: center;
+}
+
+@media screen and (min-width:768px){
+    .nav{
+        max-width: 1250px;
+        margin:auto;
+    }
+    .nav__logo{
+        width: 200px;
+        height:38px;
+    }
 
 
+}
