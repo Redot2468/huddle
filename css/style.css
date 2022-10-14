@@ -1,0 +1,73 @@
+*, *::after, *::before{
+    box-sizing: border-boxs;
+}
+
+
+:root{
+    --color-primary:#042a35;
+    --color-secondary:#fe52c0;
+    --color-header:#edfbfe;
+    --color-white:#fff;
+    --font-heebo:"Heebo", san-serif;
+    --font-overpass:"Overpass", san-serif;
+    --font-inter:"Inter", san-serif;
+    --font-kanit:"Kanit", san-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: var(--font-heebo);
+    font-size: 1.6rem;
+    color:var(--color-primary);
+    line-height: 1.5;
+
+}
+
+/* typography */
+
+h1, h2, h3{
+    font-family: var(--font-inter);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 1.5px;
+}
+
+h1{
+    font-size: 3.4rem;
+}
+
+h2{
+    font-size: 2.7rem;
+    margin-bottom: 0.8rem;
+}
+
+/* buttons */
+
+.btn{
+    background: var(--color-secondary);
+    border:none;
+    border-radius: 50px;
+    transition: background .2s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #ff9bdb;
+}
+
+.btn a{
+    text-decoration: none;
+    color:white;
+}
+
+.btn__first{
+    padding:2rem 7rem;
+}
+
+.btn__second{
+    padding:3rem 9rem;
+}
+
