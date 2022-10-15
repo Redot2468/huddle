@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Huddle re-imagines the way we build communities"
+    />
+    <meta property="og:title" content="The Huddle" />
+    <title>Huddle - Build the community your fans will love</title>
     <script
       src="https://kit.fontawesome.com/bbec75341f.js"
       crossorigin="anonymous"
@@ -19,8 +24,113 @@
 
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
+    <!-- COMbining all components -->
+
+    <!-- nav bar and banner -->
+    <header>
+      <div class="hero__banner">
+        <div class="hero__transparency">
+          <!-- nav -->
+
+          <div class="nav">
+            <img src="./images/logo.svg" class="nav__logo" alt="Logo" />
+            <button class="btn btn__nav"><a href="#">Try It Free</a></button>
+          </div>
+
+          <!-- banner conents -->
+          <div class="grid hero__width">
+            <div class="hero__contents" data-aos="zoom-in-right">
+              <h1 class="hero__heading">
+                Build The Community Your Fans Will Love
+              </h1>
+              <p class="hero__description">
+                Huddle re-imagines the way we build communities. You have a
+                voice, but so does your audience. Create connections with your
+                users as you engage in genuine discussion.
+              </p>
+              <button class="btn btn__first btn__first">
+                <a href="#">Get Started for Free</a>
+              </button>
+            </div>
+            <img
+              src="./images/illustration-mockups.svg"
+              alt=""
+              class="banner__image"
+              data-aos="zoom-in-right"
+              data-aos-duration="1500"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- grow features block starts here -->
+      <div class="grid features__block grow__together">
+        <section class="features__image grow__image" data-aos="zoom-in-right">
+          <img
+            src="./images/illustration-grow-together.svg"
+            alt="grow together"
+          />
+        </section>
+        <section class="features grow__features" data-aos="zoom-in-right">
+          <h2 class="features__heading">Grow Together</h2>
+          <p>
+            Generate meaningful discussions with your audience and build a
+            strong, loyal community. Think of the insightful conversations you
+            miss out on with a feedback form.
+          </p>
+        </section>
+      </div>
+
+      <!-- flow features block -->
+
+      <div class="grid features__block flow__conversation">
+        <section class="features__image flow__image" data-aos="zoom-in-right">
+          <img
+            src="./images/illustration-flowing-conversation.svg"
+            alt="grow together"
+          />
+        </section>
+        <section class="features grow__features" data-aos="zoom-in-right">
+          <h2 class="features__heading">Flowing Conversations</h2>
+          <p>
+            You wouldn't paginate a conversation in real life, so why do it
+            online? Our threads have just-in-time loading for a more natural
+            flow.
+          </p>
+        </section>
+      </div>
+
+      <!-- users block-->
+
+      <div class="grid features__block users">
+        <section class="features__image users__image" data-aos="zoom-in-right">
+          <img src="./images/illustration-your-users.svg" alt="grow together" />
+        </section>
+        <section class="features grow__features" data-aos="zoom-in-right">
+          <h2 class="features__heading">Your Users</h2>
+          <p>
+            It takes no time at all to integrate Huddle with your app's
+            authentication solution. This means, once signed in to your app,
+            your users can start chatting immediately.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <aside>
+      <div class="callout" data-aos="zoom-in-right">
+        <h2>Ready To Build Your Community?</h2>
+        <button class="btn btn__first btn__first">
+          <a href="#">Get Started for Free</a>
+        </button>
+      </div>
+    </aside>
+
     <footer class="footer">
       <img src="./images/footerlogo.svg" alt="" class="footer__logo" />
       <div class="grid">
@@ -72,5 +182,10 @@
         </section>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
